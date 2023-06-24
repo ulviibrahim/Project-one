@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'DM Serif Display', serif;
+  font-size: 20px; }
+
+.fa-right-long {
+  color: #CDA274;
+  font-size: 15px; }
+
+.nav {
+  width: 7354px !important; }
+
+.menu ul {
+  display: flex; }
+
+.interno {
+  color: #292f36;
+  font-size: 40px;
+  text-decoration: none;
+  margin-left: 10px; }
+
+.getstarted {
+  background-color: #292f36;
+  color: white;
+  border-radius: 13px;
+  width: 138px;
+  padding: 5px 11px; }
+
+.menu ul li {
+  margin-left: 10px; }
+
+.menu ul li a {
+  text-decoration: none;
+  color: #292f36; }
+
+.container .logo img {
+  margin-top: 10px;
+  width: 34px;
+  height: 34px; }
+
+.background-photo {
+  background-image: url("img/Photo (1).jpg");
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: 356px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; }
+
+.home-head-text {
+  width: 504px;
+  height: 179px;
+  background: white;
+  text-align: center;
+  border-radius: 38px 38px 0 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center; }
+  .home-head-text h1 {
+    font-weight: 900; }
+
+#color .col-12 {
+  display: flex;
+  justify-content: center; }
+  #color .col-12 .boxes {
+    display: flex;
+    justify-content: space-evenly; }
+    #color .col-12 .boxes .box1 {
+      width: 100px;
+      height: 100px;
+      border-radius: 11px;
+      background-color: #CDA274; }
+    #color .col-12 .boxes .box2 {
+      width: 100px;
+      height: 100px;
+      border-radius: 11px;
+      background-color: #292f36; }
+    #color .col-12 .boxes .box3 {
+      width: 100px;
+      height: 100px;
+      border-radius: 11px;
+      background-color: #F4F0EC; }
+
+.color {
+  width: 80%;
+  border-radius: 38px;
+  height: 303px;
+  background-color: #F6F6F6;
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .color .primaries {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center; }
+    .color .primaries h1 {
+      font-weight: 900; }
+    .color .primaries p {
+      width: 61%; }
+
+.homeSlide {
+  background-image: url("./img/Photo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0 0 0 115px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 170px; }
+  .homeSlide .slidephoto {
+    max-width: 100%;
+    height: 634autopx;
+    border-radius: 0 0 0 75px; }
+  .homeSlide .slideH2 {
+    font-weight: 600; }
+  .homeSlide .slideP {
+    font-family: Jost;
+    width: 28%;
+    left: 10%;
+    font-family: Jost;
+    font-size: 16px;
+    font-weight: 400; }
+
+.ContactLeftSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; }
+
+.contact .call {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-content: start;
+  margin-left: 60px; }
+.contact .contactPhoto {
+  max-width: 100%;
+  border-radius: 0 100px; }
+.contact .getstarted {
+  width: 171px;
+  height: 50px;
+  margin-top: 20px; }
+
+.callnumber {
+  position: relative; }
+
+.callnumber:before {
+  content: '\f095';
+  left: -58px;
+  color: #CDA274;
+  font-family: sans-serif;
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  position: absolute;
+  padding: 10px;
+  background-color: #F4F0EC;
+  line-height: 36px;
+  text-align: center;
+  border-radius: 98%; }
+
+.aboutCards {
+  background-color: #f4f0ec;
+  border-radius: 16px;
+  padding-top: 100px;
+  text-align: center; }
+  .aboutCards .card-total {
+    background-color: white;
+    border-radius: 4%;
+    padding: 33px 30px 54px 3px; }
+    .aboutCards .card-total .card-header {
+      display: flex;
+      justify-content: space-evenly; }
+      .aboutCards .card-total .card-header img {
+        border-radius: 50%; }
+    .aboutCards .card-total .road {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+
+/*# sourceMappingURL=style.css.map */
