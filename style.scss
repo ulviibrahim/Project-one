@@ -347,6 +347,9 @@ display: flex;
    
 
     }
+    footer{
+       text-align: center;
+    }
 }
 
 #article{
@@ -362,6 +365,7 @@ display: flex;
         }
     }
     .article-card{
+        margin-top: 40px;
     display: flex;
     flex-direction: column;
     padding: 18px 18px 38px;
@@ -449,6 +453,11 @@ letter-spacing: 0.22px;
     color: #292F36;
     list-style: none;
     line-height: 40px;
+    li:first-child h2{
+        font-weight: bold; 
+        margin-bottom: 33px;
+    
+    }
      a{
         text-decoration: none;
         color: #292F36;
@@ -458,3 +467,25 @@ letter-spacing: 0.22px;
     text-align: center; margin: 20px 0;
   }
 }
+
+// test plugin
+.bg{
+    background-color: #1e1f26;
+    height: 100vh;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .level{
+    background-color: #00d1b2;
+    padding: 5rem 0;
+    color: #ffffff;
+    margin: 0!important;
+  }
+  
+  .title{
+    color: inherit;
+    width: 200px;
+    height: 36px;
+  }

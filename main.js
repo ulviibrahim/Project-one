@@ -1,77 +1,43 @@
 
-//  var t=$('.count-span').text()
-// console.log(t)
-// scrollTo($('count-span'))(
-//     $('count-span').text='15'
-// )
-// var lastScrollTop=0
-// $(window).scroll(function(e){
-//     var st=$(this).scrollTop()
-//     if(st>lastScrollTop){
-//         console.log($('.count-span'))
-//     }
-// })
+let section=document.getElementById('counter')
 
-// var art=0
-// var x=35
-// var counts=()=>{
-//     for(var i=0;i<x;i++){
-//         art++
-//     }
-// }
-// counts()
-// console.log(art)
-var one  =  document.querySelectorAll('.counter span')
+let stat=document.querySelectorAll('.count-span')
+
+let start=false
 
 
-window.addEventListener("scroll", (event) => {
-    let scroll = this.scrollY;
-    if(scroll>3400){
+window.onscroll=function(){
+    if(window.scrollY>=section.offsetTop||window.scrollY>=3500){
+console.log(window.scrollY)
 
-      var t=0
-    var fx=  setInterval(function(e) {
-          t++
-          for(var i=0;i<one.length;i++){
-          
-   if (t>one[i].getAttribute('data-count')){
-       clearInterval(fx)
-   }else{
-    one[i].innerHTML=t
-   }
-  }       
-      }, 2);
-  
-    }else if(scroll>3600){
-      $('.count-span').html(0)
-    } if(scroll<3600){
+        if(!start){
+console.log(start)
+            stat.forEach(element => {
+                startCount(element)
+            });
 
-      var t=0
-    var fx=  setInterval(function(e) {
-          t++
-          for(var i=0;i<one.length;i++){
-          
-   if (t>one[i].getAttribute('data-count')){
-       clearInterval(fx)
-   }else{
-    one[i].innerHTML=t
-   }
-  }       
-      }, 2);
-  
-    }else if(scroll>3600){
-      $('.count-span').html(0)
-    }
+            // stat.foreach((sta)=>startCount(sta))
+        }
+        start=true
+        
+console.log(start)
  
-});
+    }else{
+        
+        stat.forEach(element => {
+            element.innerHTML=0
+        });
+        start=false
+    }
+}
 
-window.addEventListener("scroll", (event) => {
-  console.log(this.scrollY)
+function startCount(el){
+    let max=el.dataset.count;
+    let count=setInterval(()=>{
+        el.textContent ++
+        if(el.textContent==max){
+            clearInterval(count);
+        }
+    },200/ stat)
+}
 
-})
-
-// const genNumber = () => {
-//     document.querySelector(".count-span").style.setProperty("--percent", Math.random());
-//   };
-  
-//   setInterval(genNumber, 2000);
-//   setTimeout(genNumber);
