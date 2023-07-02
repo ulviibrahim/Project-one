@@ -318,4 +318,33 @@ body {
     padding: 7px 11px;
     border-radius: 16px; }
 
+footer .interno p {
+  color: #4D5053;
+  font-size: 15px;
+  font-family: Jost;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.22px; }
+footer .interno h1 {
+  display: inline;
+  font-weight: bold; }
+footer .interno ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0; }
+  footer .interno ul li a {
+    color: #292F36; }
+footer .pages, footer .Services, footer .Contact {
+  color: #292F36;
+  list-style: none;
+  line-height: 40px; }
+  footer .pages a, footer .Services a, footer .Contact a {
+    text-decoration: none;
+    color: #292F36; }
+footer .copyright {
+  text-align: center;
+  margin: 20px 0; }
+
 /*# sourceMappingURL=style.css.map */
